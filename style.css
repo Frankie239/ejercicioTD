@@ -6,27 +6,37 @@ ul
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;    
+    float: right;
 }
 li
 {
-    padding-right: 5px;
-    display: block;
-    float: right;
+    
+    display:block;
+    float: left;
+    
 
 
 }
 li a{
+    
     color: whitesmoke;
+    text-decoration: none;   
+    padding: 6px 16px; 
+    text-align: center;
     
 }
-li a:hover
-{
+
+li a:hover:not(.active) {
     background-color:rgb(219, 186, 125);
     color: rgb(37, 37, 37);
+    padding: 14px 16px;
 }
+
 .active{
     background-color:rgb(219, 186, 125);
     color: rgb(37, 37, 37);
+    padding: 6px 12px;
 }
 button
 {
@@ -39,30 +49,25 @@ button:hover
     background-color:rgb(219, 186, 125)  ;
 
 }
+/*
 .flex-container{
     display: flex;
 }
-
+*/
 
 @font-face {
     font-family: "Segoe UI";
     font-weight: 200;
     src: local("Segoe UI Light");
 }
-.container
-{
-    display: flex;
-    
-    
-}
-.container div i{
-    font-size: 40px;
-margin-top: 4%;
-}
+
+
+/*
 .flex-item
 {
     display: flex;
 }
+*/
 #header
 {
     position: fixed;
@@ -71,32 +76,27 @@ margin-top: 4%;
     color: whitesmokesmoke;
     height:30px;
     background-color:rgb(37, 37, 37);
-    flex-direction: row;
+    
 }
 #logo
 {
  width: 60%;  
- align-self: center;
+
  padding-left: 10%;
  color: whitesmoke;
+ float: left;
 }
 
-#buttons
-{
-    flex-flow: row;
-    flex-wrap: nowrap;
-    
-}
 
 #main
 {
     height: 350px;
     background-color: rgb(37, 37, 37);
     color: whitesmoke;
-    flex-wrap: wrap;
+    
     text-align: center;
-    align-content: center;
-    justify-content: center;
+   
+ 
     background-image: url(img/bed-bedroom-furniture-headboard-279746_1.jpg);
     background-size: cover;
     background-position: center;
@@ -106,22 +106,62 @@ margin-top: 4%;
 
 #enjoy
 {
-    color:rgb(219, 186, 125);
+    color: rgb(219, 186, 125);
+    float: left;
+    margin: 0%;
+    margin-left: 39%;
+    margin-top:4.7%;
+    margin-right: 1%;
 }
+#stay
+{
+    float: left;
+    text-align: center;
+    margin: 0%;
+    margin-top: 0%;
+    margin-top: 5%;
+}
+#main p{
+    margin-top: 10%;
+}
+.mid-box
+{
+    width: 50%;
+   float: left;
 
+}
+.mid-box h3{
+    float: left;
+
+    text-align: center;
+
+    margin: 0%;
+
+    margin-top: 0%;
+
+    margin-top: 0%;
+
+    margin-top: 0%;
+
+    margin-top: 5%;
+}
 #image
 {
-    display: flex;
+   
     height: 250px;
     width: 50%;
     background-color:rgb(37, 37, 37) ;
-    justify-content: center;
-    vertical-align: middle;
+    object-fit: cover;
     
 
 }
 #image img{
-    object-fit: cover;
+    height: inherit;
+
+width: 664.5px;
+
+object-fit: cover;
+   
 }
     
 
@@ -131,20 +171,21 @@ margin-top: 4%;
     height: 250px;
     background-color: rgb(37, 37, 37);
     color: whitesmoke;
-    flex-direction: row;
-    flex-wrap: wrap;
     text-align: center;
-    align-content: center;
-    justify-content: center;
-
+   
 }
 
 #low div{
     height: 190px;
-    width: 33%;
-    flex-direction: column;
-    justify-content: center;
+    width: 33.33%;
+    float:left;
     text-align: center;
+    
+}
+#low div i
+{
+    font-size: 40px;
+    margin-top: 2%;
 }
 #location{background-color: whitesmoke;}
 #meals{background-color:rgb(219, 186, 125) ;}
@@ -152,38 +193,59 @@ margin-top: 4%;
 
 #footer
 {
-    align-content: flex-end;
-    justify-content: center;
+    text-align: center;
+      
     background-color: rgb(37, 37, 37);
     color: whitesmoke;
+    
+}
+#footer h6{
+    margin-left: 45%;
+    padding: 30px;
+
+    margin: 0;
 }
 
 
 /*//////////////////////Estilo del Abbout///////////////////////////////////////*/
 #about
 {
-    flex-direction: row;
+    height: 250px;
+
+    width: 100%;
 
 }
+
+#aboutTxt{
+    color: rgb(219, 186, 125);
+    float: left;
+    margin: 0%;
+        margin-top: 0%;
+        margin-right: 0%;
+        margin-left: 0%;
+    margin-left: 39%;
+    margin-top: 5.8%;
+    margin-right: 1%;
+
+}
+
 
 #text
 {
-    flex-direction: row;
-    width: 50%;
-    flex-wrap: wrap;
-    align-content: flex-start;
+     width: 50%;
+      
+    float:left;
 }
 #circle{
-    width: 51%;
-    float: right;
+    float: left;
     background-color: red;
     border-radius: 64%;
-    justify-self: center;
-    height: 230px;
-    margin-top: 5%;
-    margin-left: 7%;
+
+    height: 229px;
+    width: 310px;
+    margin-top: 2%;
+    margin-left: 8%;
     object-fit: cover;
-    
 }
 #img-cont{
     width: 50%;
@@ -192,30 +254,38 @@ margin-top: 4%;
 #reviews
 {
    
-    flex-direction: column;
     height: 500px;
-    justify-content: space-around;
+    
     background-image: url(img/city.jpg);
     background-position-y: -845px;
     background-position-x: -145px;
+    text-align: center;
     
 }
 #reviews h1
 {
-    align-self: center;
+    
     color:whitesmoke;
 }
 #review
 {
-    display: flex;
+  
     background-color:rgb(219, 186, 125);
     border-radius: 15px;
     width: 70%;
-    align-self: center;
-    
+   
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    text-align: left;
 
 }
+#review p
+{   
+    width:88%;
+    float: right;
 
+}
 
   
 .circle_pic
@@ -234,8 +304,8 @@ margin-top: 4%;
 
 form{
     height: 300px;
-    flex-direction: column;
-    justify-content: space-around;
+    
+
 }
 form div
 {
@@ -246,9 +316,15 @@ form div
 
 #title
 {
-    flex-direction: row;
+   height: 150px;
     width: 30%;
-    flex-wrap: wrap;
+    
+}
+#title h3{
+    float: left;
+}
+#title h1{
+    float:left;
 }
 
 #contact
@@ -256,10 +332,12 @@ form div
     color:rgb(219, 186, 125);
 
 }
-#extra
-{
-    justify-items: center;
-
+form label{
+    display: block;
+    width:100%;
+}
+form textarea{
+    width: 100%;
 }
 #extra div i{
     font-size: 50px;
@@ -269,12 +347,12 @@ margin-top: 4%;
 {
     width: 33%;
     height: 150px;
-    justify-content: center;
-    align-content: center;
+   
+ 
     text-align: center;
     background-color:rgb(37, 37, 37);
     color: whitesmoke;
-    
+    float:left;
 }
 form button
 {
