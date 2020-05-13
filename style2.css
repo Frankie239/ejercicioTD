@@ -11,6 +11,7 @@ body{
     "main main main main main main "500px
     "foto foto foto texto texto texto" 200px
     "a a b b c c" 150px
+    "footer footer footer footer footer footer"auto
     ;
 }
 .main{
@@ -44,28 +45,49 @@ body{
    background-size: cover;
    background-position: center;
     grid-area: foto;
-    background-image: url(img/hotel.jpg)
+    background-image: url(img/hotel.jpg);
+    padding-right: 272px;
 }
 .texto{
     grid-area: texto;
     text-align: center;
     grid-template-columns:50%;
+    background-color: rgb(37, 37, 37)  ;
+    color: whitesmoke;
     
 }
-.location{
+.texto p {
+    margin-top: 7%;
+}
+#location{
     grid-area: a;
-    background-color:blue;
+    background-color:  whitesmoke;
+    color: black;
+    text-align: center;
 }
-.meals{
+#meals{
     grid-area: b;
-    background-color:lightblue;
+    background-color: rgb(219, 186, 125);
+    color: black;
+    text-align: center;
 }
 
-.fitness{
+#fitness{
     grid-area: c;
-    background-color:rgb(5, 114, 23);
+    background-color:whitesmoke;
+    color: black;
+    text-align: center;
 }
-
+.box{
+    background-color: rgb(37, 37, 37);
+    color: whitesmoke;
+    text-align: center;
+}
+.box i{
+    font-size: 45px;
+    margin-top: 2%;
+}
+/*Generico de todas las paginas*/
 ul
 {
     list-style-type: none;
@@ -142,4 +164,12 @@ width: 60%;
 padding-left: 10%;
 color: whitesmoke;
 float: left;
+}
+footer
+{
+    display: grid;
+    text-align: center;
+    background-color: rgb(37, 37, 37);
+    color: whitesmoke;
+    grid-column: 1/7;
 }
