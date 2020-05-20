@@ -97,7 +97,7 @@ margin-top: 4%;
     text-align: center;
     align-content: center;
     justify-content: center;
-    background-image: url(img/bed-bedroom-furniture-headboard-279746_1.jpg);
+    background-image: url(https://i.postimg.cc/8P3xpCvF/bed-bedroom-furniture-headboard-279746-1.jpg);
     background-size: cover;
     background-position: center;
 
@@ -195,10 +195,9 @@ margin-top: 4%;
     flex-direction: column;
     height: 500px;
     justify-content: space-around;
-    background-image: url(img/city.jpg);
-    background-position-y: -845px;
-    background-position-x: -145px;
-    
+    background-image: url(https://i.postimg.cc/v8vQZ584/city.jpg);
+    background-position-y: -1008px;
+    background-position-x: 52px
 }
 #reviews h1
 {
