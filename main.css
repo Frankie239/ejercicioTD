@@ -1,0 +1,178 @@
+body{
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+    
+}
+
+#content{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: 
+    "main main main main main main "500px
+    "foto foto foto texto texto texto" 200px
+    "a a b b c c" 150px
+    "footer footer footer footer footer footer"auto
+    ;
+}
+.main{
+    width: 100vw;
+    grid-area: main;
+    background-color:red;
+    text-align: center;
+    color: whitesmoke;
+    background-image: url(https://i.postimg.cc/8P3xpCvF/bed-bedroom-furniture-headboard-279746-1.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.main h1{
+    float: left;
+
+
+}
+.main p {
+    margin-top: 5%;
+
+}
+#enjoy{
+    color:rgb(219, 186, 125);
+    margin-left:43%;
+}
+
+.foto {
+    
+    background-color:rgb(37, 37, 37) ;
+   background-size: cover;
+   background-position: center;
+    grid-area: foto;
+    background-image: url(https://i.postimg.cc/hP7p01Jj/hotel.jpg);
+    padding-right: 272px;
+}
+.texto{
+    grid-area: texto;
+    text-align: center;
+    grid-template-columns:50%;
+    background-color: rgb(37, 37, 37)  ;
+    color: whitesmoke;
+    
+}
+.texto p {
+    margin-top: 7%;
+}
+#location{
+    grid-area: a;
+    background-color:  whitesmoke;
+    color: black;
+    text-align: center;
+}
+#meals{
+    grid-area: b;
+    background-color: rgb(219, 186, 125);
+    color: black;
+    text-align: center;
+}
+
+#fitness{
+    grid-area: c;
+    background-color:whitesmoke;
+    color: black;
+    text-align: center;
+}
+.box{
+    background-color: rgb(37, 37, 37);
+    color: whitesmoke;
+    text-align: center;
+}
+.box i{
+    font-size: 45px;
+    margin-top: 2%;
+}
+
+
+
+/*Generico de todas las paginas*/
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
+    float: right;
+}
+
+li
+{
+    
+    display:block;
+    float: left;
+    
+
+
+}
+li a{
+    
+    color: whitesmoke;
+    text-decoration: none;   
+    padding: 6px 16px; 
+    text-align: center;
+    
+}
+
+li a:hover:not(.active) {
+    background-color:rgb(219, 186, 125);
+    color: rgb(37, 37, 37);
+    padding: 14px 16px;
+}
+
+.active{
+    background-color:rgb(219, 186, 125);
+    color: rgb(37, 37, 37);
+    padding: 6px 12px;
+}
+button
+{
+    border: none;
+    border-radius: none;
+    padding:12px,28px;
+}
+button:hover
+{
+    background-color:rgb(219, 186, 125)  ;
+
+}
+
+
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 200;
+    src: local("Segoe UI Light");
+}
+
+
+
+#header
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: whitesmokesmoke;
+    height:33px;
+    background-color:rgb(37, 37, 37);
+    
+}
+#logo
+{
+width: 60%;  
+
+padding-left: 10%;
+color: whitesmoke;
+float: left;
+}
+footer
+{
+    display: grid;
+    text-align: center;
+    background-color: rgb(37, 37, 37);
+    color: whitesmoke;
+    grid-column: 1/7;
+}

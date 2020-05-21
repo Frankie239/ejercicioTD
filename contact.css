@@ -1,0 +1,160 @@
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
+    float: right;
+}
+
+li
+{
+    
+    display:block;
+    float: left;
+    
+
+
+}
+li a{
+    
+    color: whitesmoke;
+    text-decoration: none;   
+    padding: 6px 16px; 
+    text-align: center;
+    
+}
+
+li a:hover:not(.active) {
+    background-color:rgb(219, 186, 125);
+    color: rgb(37, 37, 37);
+    padding: 14px 16px;
+}
+
+.active{
+    background-color:rgb(219, 186, 125);
+    color: rgb(37, 37, 37);
+    padding: 6px 12px;
+}
+button
+{
+    border: none;
+    border-radius: none;
+    padding:12px,28px;
+}
+button:hover
+{
+    background-color:rgb(219, 186, 125)  ;
+
+}
+
+
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 200;
+    src: local("Segoe UI Light");
+}
+
+form{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 25%;
+    grid-template-rows: auto;
+
+
+    
+    grid-template:
+    "name . . . "50px
+    "textName textName textName textName " 100px
+    "mail . . . " 50px
+    "textMail textMail textMail textMail "100px
+    
+
+    
+    ;
+    
+}
+
+#header
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: whitesmokesmoke;
+    height:33px;
+    background-color:rgb(37, 37, 37);
+    
+}
+#logo
+{
+width: 60%;  
+
+padding-left: 10%;
+color: whitesmoke;
+float: left;
+}
+footer
+{
+    display: grid;
+    text-align: center;
+    background-color: rgb(37, 37, 37);
+    color: whitesmoke;
+    grid-column: 1/7;
+}
+
+
+body{
+
+    
+}
+#content div h3{
+    margin-top: 5%;
+    
+}
+
+#contact{
+    float: left;
+    margin-right: 2%;
+    color: rgb(219, 186, 125);
+}
+
+#name label{
+    grid-area: name;
+  
+}
+#name textarea{
+    grid-area: textName;
+   
+}
+#mail label{
+    
+    grid-area: mail;
+}
+#mail textarea{
+    
+    grid-area: textMail;
+}
+#message label{
+   
+    grid-area: message;
+}
+#Submit{
+    grid-area: button;
+}
+
+form div label{
+    grid-area:label;
+}
+form div textarea{
+    grid-area: texbox;
+}
+
+
+form div{
+    grid-template:
+    "label . "10px
+    "textbox . "100px
+
+        ;
+}
