@@ -59,21 +59,11 @@ form{
     display: grid;
     height: 100vh;
     width: 100vw;
-    grid-template-columns: 25%;
+    grid-template-columns: 1;
     grid-template-rows: auto;
 
 
-    
-    grid-template:
-    "name . . . "50px
-    "textName textName textName textName " 100px
-    "mail . . . " 50px
-    "textMail textMail textMail textMail "100px
-    
-
-    
-    ;
-    
+ 
 }
 
 #header
@@ -104,10 +94,6 @@ footer
 }
 
 
-body{
-
-    
-}
 #content div h3{
     margin-top: 5%;
     
@@ -118,29 +104,49 @@ body{
     margin-right: 2%;
     color: rgb(219, 186, 125);
 }
-
+#name{
+    grid-column: 1;
+}
 #name label{
     grid-area: name;
+    padding-right: 84%;
   
 }
 #name textarea{
     grid-area: textName;
+    width: 100wv;
    
 }
+#mail{
+    grid-column: 1;
+}
 #mail label{
-    
+    padding-right: 84%;
+  
     grid-area: mail;
 }
 #mail textarea{
     
     grid-area: textMail;
 }
+#message{
+    grid-column: 1;
+}
 #message label{
-   
+    padding-right: 84%;
+  
     grid-area: message;
+}
+#message textarea{
+    height: 70%;
 }
 #Submit{
     grid-area: button;
+    grid-column: 1;
+    grid-row: 4;
+    width: 10%;
+    height: 50%;
+
 }
 
 form div label{
@@ -148,13 +154,38 @@ form div label{
 }
 form div textarea{
     grid-area: texbox;
+    width: 80%;
+}
+
+#bottom{
+     display: grid;
+     grid-template-columns: 3;
+     grid-template-rows: 1;
+     text-align: center;
+
+}
+
+.extra{
+    font-size: 20px;
+    background-color: rgb(37, 37, 37);
+    color: whitesmoke;
+}
+
+.extra i{
+    font-size:40px ;
+    padding-top: 5%;
+}
+
+ #extra-box1{
+     grid-column: 1;
+     
+}
+
+#extra-box2{
+    grid-column: 2;
+}
+#extra-box3{
+    grid-column: 3;
 }
 
 
-form div{
-    grid-template:
-    "label . "10px
-    "textbox . "100px
-
-        ;
-}
