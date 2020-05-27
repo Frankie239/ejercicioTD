@@ -1,0 +1,82 @@
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
+    float: right;
+}
+
+li
+{
+    
+    display:block;
+    float: left;
+    
+
+
+}
+li a{
+    
+    color: whitesmoke;
+    text-decoration: none;   
+    padding: 6px 16px; 
+    text-align: center;
+    
+}
+
+li a:hover:not(.active) {
+    background-color:rgb(219, 186, 125);
+    color: rgb(37, 37, 37);
+    padding: 14px 16px;
+}
+
+.active{
+    background-color:rgb(219, 186, 125);
+    color: rgb(37, 37, 37);
+    padding: 6px 12px;
+}
+button
+{
+    border: none;
+    border-radius: none;
+    padding:12px,28px;
+}
+button:hover
+{
+    background-color:rgb(219, 186, 125)  ;
+
+}
+
+
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 200;
+    src: local("Segoe UI Light");
+}
+#header
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: whitesmokesmoke;
+    height:33px;
+    background-color:rgb(37, 37, 37);
+    
+}
+#logo
+{
+width: 60%;  
+
+padding-left: 10%;
+color: whitesmoke;
+float: left;
+}
+footer
+{
+    display: grid;
+    text-align: center;
+    background-color: rgb(37, 37, 37);
+    color: whitesmoke;
+    grid-column: 1/7;
+}
